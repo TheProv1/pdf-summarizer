@@ -17,7 +17,7 @@ def summarize_pdf(file_path, user_api):
     
     docs = text_split.split_documents(pages)
 
-    llm = ChatGroq(model = 'llama-3.1-8b-instant',
+    llm = ChatGroq(model = 'llama-3.3-70b-versatile',
                    temperature=0,
                    api_key=user_api)
 
